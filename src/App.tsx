@@ -41,16 +41,16 @@ function App() {
                 <Sparkles className="w-10 h-10 text-white animate-pulse" />
               </div>
             </div>
-            <h1 className="text-6xl font-black bg-gradient-to-r from-white via-yellow-200 to-pink-200 bg-clip-text text-transparent drop-shadow-lg">
+            <h1 className="text-5xl sm:text-6xl font-black bg-gradient-to-r from-white via-yellow-200 to-pink-200 bg-clip-text text-transparent drop-shadow-lg">
               TaskFlow
             </h1>
           </div>
-          <p className="text-white/90 text-xl font-medium drop-shadow-md">
+          <p className="text-lg sm:text-xl text-white/90 font-medium drop-shadow-md">
             ✨ Transform your productivity with style ✨
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Main Task Area */}
           <div className="lg:col-span-2 space-y-6">
             {/* Add Task Form */}

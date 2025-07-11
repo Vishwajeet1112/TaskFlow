@@ -58,10 +58,10 @@ export function AddTaskForm({ onAdd }: AddTaskFormProps) {
           className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-purple-200 focus:border-purple-400 transition-all duration-300 text-gray-900 placeholder-gray-500 resize-none bg-white/80 backdrop-blur-sm"
         />
 
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <div className="flex-1">
             <label className="block text-sm font-semibold text-gray-700 mb-3">Priority Level</label>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
               {priorityOptions.map((option) => (
                 <button
                   key={option.value}
@@ -83,7 +83,7 @@ export function AddTaskForm({ onAdd }: AddTaskFormProps) {
             <button
               type="submit"
               disabled={!text.trim()}
-              className="px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white rounded-2xl hover:from-purple-600 hover:via-pink-600 hover:to-red-600 disabled:from-gray-300 disabled:via-gray-300 disabled:to-gray-300 disabled:cursor-not-allowed transition-all duration-300 flex items-center gap-3 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 disabled:transform-none"
+              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white rounded-2xl hover:from-purple-600 hover:via-pink-600 hover:to-red-600 disabled:from-gray-300 disabled:via-gray-300 disabled:to-gray-300 disabled:cursor-not-allowed transition-all duration-300 flex items-center justify-center sm:justify-start gap-3 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 disabled:transform-none"
             >
               <Plus className="w-6 h-6" />
               Create

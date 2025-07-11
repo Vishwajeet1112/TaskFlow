@@ -41,7 +41,7 @@ export function FilterTabs({ currentFilter, onFilterChange, stats }: FilterTabsP
     <div className="relative">
       <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl blur-lg opacity-20"></div>
       <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-2 shadow-xl border border-white/20">
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           {filters.map(({ key, label, count, icon, gradient }) => (
             <button
               key={key}

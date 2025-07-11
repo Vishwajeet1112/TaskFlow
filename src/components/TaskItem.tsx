@@ -78,9 +78,9 @@ export function TaskItem({ task, onToggle, onUpdate, onDelete }: TaskItemProps) 
       {/* Animated glow effect */}
       <div className={`absolute inset-0 bg-gradient-to-r ${currentStyle.gradient} rounded-2xl blur-lg opacity-0 group-hover:opacity-20 transition-all duration-300`}></div>
       
-      <div className={`relative p-6 bg-white/95 backdrop-blur-sm rounded-2xl border-2 transition-all duration-300 hover:shadow-xl ${
-        task.completed 
-          ? 'border-emerald-300 bg-emerald-50/50 shadow-emerald-100/50' 
+      <div className={`relative p-4 sm:p-6 bg-white/95 backdrop-blur-sm rounded-2xl border-2 transition-all duration-300 hover:shadow-xl ${
+        task.completed
+          ? 'border-emerald-300 bg-emerald-50/50 shadow-emerald-100/50'
           : `${currentStyle.border} ${currentStyle.bg} shadow-lg ${currentStyle.glow}`
       } hover:scale-[1.02] hover:-translate-y-1`}>
         <div className="flex items-start gap-4">
@@ -177,7 +177,7 @@ export function TaskItem({ task, onToggle, onUpdate, onDelete }: TaskItemProps) 
             )}
           </div>
 
-          <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="flex items-center gap-2 transition-all duration-300">
             {!isEditing && (
               <>
                 <button

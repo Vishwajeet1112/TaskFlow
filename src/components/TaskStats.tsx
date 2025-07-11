@@ -36,7 +36,7 @@ export function TaskStats({ stats, onClearCompleted }: TaskStatsProps) {
         </div>
 
         <div className="space-y-6">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="relative p-4 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl border border-blue-200">
               <div className="flex items-center gap-3 mb-2">
                 <Circle className="w-5 h-5 text-blue-500" />
